@@ -1,15 +1,16 @@
 <h1>Expense</h1>
 <%= form_for :post, url: posts_path do |f| %>
-  <p>
+
+ <p>
     <%= f.label :date %><br>
     <%= f.text_field :date %>
   </p>
- 
+  
   <p>
     <%= f.label :statya %><br>
     <%= f.text_field :statya %>
   </p>
-  
+   
   <p>
     <%= f.label :summa %><br>
     <%= f.text_field :summa %>
