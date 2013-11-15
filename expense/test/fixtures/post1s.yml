@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  date: 2013-11-15 16:03:19
+  statya: MyString
+  summa: 1
+  comment: MyText
+
+two:
+  date: 2013-11-15 16:03:19
+  statya: MyString
+  summa: 1
+  comment: MyText
