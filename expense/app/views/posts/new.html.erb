@@ -1,4 +1,4 @@
-<h1>Expense</h1>
+﻿<h1>Expense</h1>
 <%= form_for :post, url: posts_path do |f| %>
  <% if @post.errors.any? %>
   <div id="error_explanation">
@@ -11,8 +11,10 @@
     </ul>
   </div>
   <% end %>
+ 
+
  <p>
-    <%= f.label :date %><br>
+    <%= f.label :Дата %><br>
     <%= f.text_field :date %>
   </p>
   
