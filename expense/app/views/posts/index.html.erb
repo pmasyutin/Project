@@ -1,0 +1,22 @@
+﻿<h1>Сводная по статьям</h1>
+ <%= link_to 'Новая статья', new_post_path %>
+<table>
+  <hr>
+  <tr>
+    <th>Date</th>
+    <th>Statya</th>
+	<th>Summa</th>
+	<th>comment</th>
+  </tr>
+ 
+  <% @posts.each do |post| %>
+    <tr>
+      <td><%= post.date %></td>
+      <td><%= post.statya %></td>
+	  <td><%= post.summa %></td>
+	  <td><%= post.comment %></td>
+	  <td><%= link_to 'Show', post %></td>
+	  <td><%= link_to 'Edit', edit_post_path(post) %></td>
+    </tr>
+  <% end %>
+</table>
