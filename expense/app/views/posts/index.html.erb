@@ -1,8 +1,23 @@
-﻿<h1>Сводная по статьям</h1>
+﻿  <head>
+    <style type="text/css">
+   TABLE {
+    width: 1000px; /* Ширина таблицы */
+    border-collapse: collapse; /* Убираем двойные линии между ячейками */
+   }
+   TD, TH {
+    padding: 3px; /* Поля вокруг содержимого таблицы */
+    border: 1px solid black; /* Параметры рамки */
+   }
+   TH {
+    background: #b0e0e6; /* Цвет фона */
+   }
+  </style>
+ </head>
+ <body>
+<h1>Сводная по статьям</h1>
  <%= link_to 'Новая статья', new_post_path %>
 <table>
-  <hr>
-  <tr>
+   <tr>
     <th>Date</th>
     <th>Statya</th>
 	<th>Summa</th>
@@ -20,3 +35,4 @@
     </tr>
   <% end %>
 </table>
+</body>

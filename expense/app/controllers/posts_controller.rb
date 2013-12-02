@@ -1,4 +1,4 @@
-class PostsController < ApplicationController
+﻿class PostsController < ApplicationController
 def new
 @post = Post.new
 end
@@ -24,16 +24,16 @@ end
 def edit
   @post = Post.find(params[:id])
 end
-
 def update
   @post = Post.find(params[:id])
  
-  if @post.update(post_params)
-    redirect_to @post
+  if @post.update_attributes(params[:post])
+    redirect_to :action => :show, :id => @post.id
   else
     render 'edit'
   end
-  end
+end
+
 end
 private
   def post_params
