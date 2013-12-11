@@ -30,9 +30,9 @@
       <td><%= post.statya %></td>
 	  <td><%= post.summa %></td>
 	  <td><%= post.comment %></td>
-	  <td><%= link_to 'Show', post %></td>
-	  <td><%= link_to 'Edit', edit_post_path(post) %></td>
-	  <td><%= link_to 'Delete', { :action => :destroy, :id => post.id }, :method => :delete, :confirm => 'Are you sure?' %></td>
+	  <td><%= link_to 'Показать', post %></td>
+	  <td><%= link_to 'Редактировать', edit_post_path(post) %></td>
+	  <td><%= link_to 'Удалить', { :action => :destroy, :id => post.id }, :method => :delete, :confirm => 'Are you sure?' %></td>
     </tr>
   <% end %>
 </table>
